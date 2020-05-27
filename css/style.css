@@ -238,7 +238,7 @@ address {
   border: none;
 }
 
-.button:active {
+.btn:active {
   background-color: var(--special-error);
 }
 
