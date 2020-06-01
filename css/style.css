@@ -56,12 +56,28 @@ img {
 
 /* Header */
 
+.header-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px
+}
 .main-header {
   background-color: var(--basic-background);
 }
 
 .main-header-top  {
   background-color: var(--special-darckblue);
+}
+
+.main-logo-link {
+  height: 42px;
 }
 
 .main-logo:active {
@@ -80,7 +96,8 @@ input[type="search"]:focus {
 
 .bookmarks-link,
 .cart-link {
-color: var(--basic-white);
+  padding: 9px;
+  color: var(--basic-white);
 }
 
 .bookmarks-link:active,
@@ -90,6 +107,7 @@ color: var(--basic-white);
 }
 
 .order-link {
+  padding: 9px 16px;
   color: var(--basic-white);
   background-color: var(--special-success);
 }
@@ -98,7 +116,15 @@ color: var(--basic-white);
   background-color: var(--basic-green);
 }
 
+.haeder-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .desc {
+  width: 25%;
+  padding-left: 25px;
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
@@ -107,6 +133,7 @@ color: var(--basic-white);
 }
 
 .tel {
+
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -131,6 +158,8 @@ address {
 .user-navigation {
   list-style: none;
 }
+
+
 
 .user-name:active {
   color: var(--basic-greylight);
@@ -199,6 +228,10 @@ address {
   list-style: none;
 }
 
+.about-company {
+  display: flex;
+}
+
 .contacts-title {
   text-transform: uppercase;
 }
@@ -258,6 +291,21 @@ address {
   font-size: 30px;
   line-height: 30px;
   background-color: var(--basic-background);
+}
+
+.breadcrumbs-list {
+  display: flex;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.cards-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-list {
@@ -329,6 +377,7 @@ address {
 }
 
 .pagination-list  {
+  display: flex;
   list-style: none;
 }
 
@@ -373,6 +422,26 @@ address {
 
 .main-footer {
   background-color: var(--special-darcdarckblue);
+}
+
+.footer-up {
+  background-color: var(--basic-grey);
+}
+
+.footer-down {
+  background-color: var(--special-darckblue);
+}
+
+.footer-top {
+  display: flex;
+}
+
+.footer-middle{
+  display: flex;
+}
+
+.footer-bottom {
+  display: flex;
 }
 
 .footer-nav  {
