@@ -58,9 +58,9 @@ img {
 
 .header-up {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 42px;
 }
 
 .container {
@@ -159,8 +159,6 @@ address {
   list-style: none;
 }
 
-
-
 .user-name:active {
   color: var(--basic-greylight);
 }
@@ -243,27 +241,51 @@ address {
 
 /* Main */
 
-.catalog-list {
+.category-list {
+  display: flex;
   list-style: none;
 }
 
-.catalog-item-1 {
+.column-2 .category-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-2 {
+  display: flex;
+}
+
+.category-item-1 {
+  margin-right: 20px;
+  width: 300px;
+  height: 123px;
   background-color: var(--special-ylellow);
 }
 
-.catalog-item-2 {
+
+
+.category-item-2 {
+  margin-right: 20px;
+  width: 300px;
+  height: 123px;
   background-color: var(--special-blue);
 }
 
-.catalog-item-3 {
+.category-item-3 {
+  width: 300px;
+  height: 123px;
   background-color: var(--special-lilac);
 }
 
-.catalog-item-4 {
+.category-item-4 {
+  width: 300px;
+  height: 123px;
   background-color: var(--special-greenligh);
 }
 
-.catalog-item-5 {
+.category-item-5 {
+  width: 300px;
+  height: 123px;
   background-color: var(--special-ylellow);
 }
 
@@ -287,10 +309,15 @@ address {
   list-style: none;
 }
 
-.catalog-title {
+.category-title {
   font-size: 30px;
   line-height: 30px;
   background-color: var(--basic-background);
+}
+
+.manufacturers-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-list {
@@ -300,6 +327,11 @@ address {
   line-height: 18px;
   text-transform: uppercase;
   list-style: none;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cards-wrap {
@@ -365,7 +397,7 @@ address {
   background-color: var(--special-error);
 }
 
-.catalog-btn {
+.category-btn {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -374,6 +406,11 @@ address {
   text-align: center;
   border-radius: 3px;
   color: var(--basic-white);
+}
+
+.catalog-row  {
+  display: flex;
+  
 }
 
 .pagination-list  {
@@ -490,6 +527,14 @@ address {
 
 .social-link {
   background-color: var(--special-darckbluedarck);
+}
+
+.social-link-vk {
+  position: relative;
+}
+
+.social-link-vk:before  {
+
 }
 
 .social-link:hover,
