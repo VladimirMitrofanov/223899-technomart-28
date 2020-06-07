@@ -23,24 +23,20 @@
           <a class="order-link" href="#">Оформить заказ</a>
         </div>
     </section>
-    <section class="main-header-middle">
-      <div class="container">
-        <div class="haeder-down">
-          <p class="desc">
-            Интернет-магазин
-            строительных материалов
-            и инструментов для ремонта
-          </p>
-          <div class="contact">
-            <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          </div>
-          <ul class="user-navigation">
-            <li class="user-navigation-item"><a class="user-navigation-link login-link" href="#">Войти</a></li>
-            <li class="user-navigation-item"><a class="user-navigation-link reg-link" href="#">Регистрация</a></li>
-          </ul>
-        </div>
+    <section class="main-header-middle container">
+      <p class="desc">
+        Интернет-магазин
+        строительных материалов
+        и инструментов для ремонта
+      </p>
+      <div class="contact-header">
+        <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
+      <ul class="user-navigation">
+        <li class="user-navigation-item"><a class="user-navigation-link login-link" href="#">Войти</a></li>
+        <li class="user-navigation-item"><a class="user-navigation-link reg-link" href="#">Регистрация</a></li>
+      </ul>
     </section>
     <div class="container">
       <nav class="main-navigation">
@@ -77,15 +73,15 @@
       <div class="row-1">
         <ul class="category-list">
           <li class="category-item-1">
-            <p>Материалы</p>
+            <p class="category-title">Материалы</p>
             <a class="category-btn" href="#">на любой вкус</a>
           </li>
           <li class="category-item-2">
-            <p>Инструмент</p>
+            <p class="category-title">Инструмент</p>
             <a class="category-btn" href="#">на все случаи</a>
           </li>
           <li class="category-item-3">
-              <p>Техника</p>
+              <p class="category-title">Техника</p>
               <a class="category-btn" href="#">для стройки</a>
             </li>
         </ul>
@@ -95,13 +91,13 @@
         <div class="column-1">
           <div class="slider">
             <ul class="slider-list">
-              <li>
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <img src="img/slider-dreli.jpg" width="620" height="266" alt="Дрели">
-                <a class="btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+              <li class="slider-item">
+                <h3 class="slider-title">Перфораторы</h3>
+                <p class="slider-desc">Настоящие мужские игрушки</p>
+                <img class="slider-image" src="img/slider-dreli.jpg" width="620" height="266" alt="Дрели">
+                <a class="btn btn-slider" href="#">ОТКРЫТЬ КАТАЛОГ</a>
               </li>
-              <li>
+              <li class="visually-hidden">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
                 <img src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
@@ -113,11 +109,11 @@
         <div class="column-2">
           <ul class="category-list">
             <li class="category-item-4">
-              <p>Скидка 50%</p>
+              <p class="category-title">Скидка 50%</p>
               <a class="category-btn" href="#">на 350 товаров</a>
             </li>
             <li class="category-item-5">
-              <p>Доставка</p>
+              <p class="category-title">Доставка</p>
               <a class="category-btn" href="#">бесплатно</a>
             </li>
           </ul>
@@ -126,8 +122,8 @@
     </section>
     <section>
       <div class="heading">
-        <h2>Популярные товары:</h2>
-        <a class="btn" href="#">Все популярные товары</a>
+        <h2 class="heading-title">Популярные товары:</h2>
+        <a class="btn heading-btn" href="#">Все популярные товары</a>
       </div>
       <ul class="goods-list">
         <div class="cards-wrap">
@@ -313,7 +309,7 @@
     <div class="footer-up">
         <section class="container footer-top">
           <a href="">
-            <img class="main-logo" src="img/logo.svg" width="220" height="47" alt="Логотип">
+            <img class="main-logo" src="img/logo.svg" width="220" height="68" alt="Логотип">
           </a>
           <ul class="footer-nav">
             <li class="footer-nav-item">
@@ -334,8 +330,10 @@
           </ul>
         </section>
         <section class="container footer-middle">
-          <address> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <div>
+            <address> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
           <ul class="offers">
             <li class="offers-item">
               <a class="offers-link" href="#">Материалы</a>
@@ -367,39 +365,39 @@
 
               </a>
             </li>
-            <li>
+            <li class="social-item">
               <a class="social-link social-link-fb" href="#">
                 <span class="visually-hidden">Facebook</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+
               </a>
             </li>
-            <li>
+            <li class="social-item">
               <a class="social-link social-link-inst" href="#">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+
               </a>
             </li>
           </ul>
-          <p>
+          <p class="feedback">
             Обратная связь:
             <a class="copyright-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p>
-            Разработано:
+          <p class="developed">
+            Разработано -
             <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
           </p>
         </section>
       </div>
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.386310739751!2d30.318068820068355!3d59.93723364539832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1590157102450!5m2!1sru!2sru" width="943" height="449" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <button type="button">X</button>
+    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.386310739751!2d30.318068820068355!3d59.93723364539832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1590157102450!5m2!1sru!2sru" width="943" height="449" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <button class="map-btn" type="button"></button>
   </section>
   <section class="modal">
     <h2 class="visually-hidden">Обратная связь</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="writeus" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="name-name">Ваше имя:</label>
         <input id="name-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -412,7 +410,7 @@
         <label for="comment-field">Текст письма:</label>
         <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
       </p>
-      <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+      <button class="btn btn-modal" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
     </form>
     <button type="button">X</button>
   </section>
