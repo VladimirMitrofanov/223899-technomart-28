@@ -11,7 +11,7 @@
   <!-- Шапка сайта -->
   <header class="main-header">
     <section class="main-header-top">
-        <div class="container header-up">
+        <div class="header-up container">
           <a class="main-logo-link" href="">
             <img class="main-logo" src="img/logo.svg" width="220" height="47" alt="Логотип">
           </a>
@@ -94,7 +94,7 @@
               <li class="slider-item">
                 <h3 class="slider-title">Перфораторы</h3>
                 <p class="slider-desc">Настоящие мужские игрушки</p>
-                <img class="slider-image" src="img/slider-dreli.jpg" width="620" height="266" alt="Дрели">
+                <img class="slider-image" src="img/slider-perforator.jpg" width="620" height="266" alt="Дрели">
                 <a class="btn btn-slider" href="#">ОТКРЫТЬ КАТАЛОГ</a>
               </li>
               <li class="visually-hidden">
@@ -104,6 +104,20 @@
                 <a class="btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
               </li>
             </ul>
+            <div class="btn-left"></div>
+            <div class="btn-right"></div>
+            <div class="radios">
+                <label class="label-slider-radio">
+                <input class="slider-radio"  name="options" type="radio">
+                <span class="slider-radio-mod"></span>
+                </label>
+
+                <label class="label-slider-radio">
+                <input class="slider-radio"  name="options" type="radio" checked>
+                <span class="slider-radio-mod"></span>
+                </label>
+
+            </div>
           </div>
         </div>
         <div class="column-2">
@@ -123,72 +137,74 @@
     <section>
       <div class="heading container">
         <h2 class="heading-title">Популярные товары:</h2>
-        <a class="btn heading-btn" href="#">Все популярные товары</a>
+        <a class="btn prod-btn" href="#">Все популярные товары</a>
       </div>
       <ul class="goods-list container">
         <div class="cards-wrap">
-          <li>
-            <a href="#">
-              <h3>Перфоратор BOSCH BFG 9000</h3>
+
+          <li class="card-item">
+            <a class="card-link" href="#">
               <p>
-                <img src="img/bosch9.jpg" width="184" height="168"  alt="Перфоратор BOSCH BFG 9000">
+                <img class="catalog-item-image" src="img/bosch9.jpg" width="184" height="164"  alt="Перфоратор BOSCH BFG 6000">
               </p>
+              <h3 class="card-title">Перфоратор BOSCH BFG 9000</h3>
             </a>
-            <p>
+            <p class="btn-block">
               <button class="button" type="button">Купить</button>
-              <button class="button" type="button">В закладки</button>
+              <button class="button btn-mod" type="button">В закладки</button>
             </p>
-            <p>
-              <del>32500 Р.</del>
-              <a href="#">25500 Р.</a>
-            </p>
+
+              <span class="del-price">32500 Р.</span>
+              <span class="price">25500 Р.</span>
+
           </li>
-          <li>
-            <a href="#">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
+          <li class="card-item">
+            <a class="card-link" href="#">
               <p>
-                <img src="img/bosch2.jpg" width="127" height="112"  alt="Перфоратор BOSCH BFG 3000">
+                <img class="catalog-item-image" src="img/bosch2.jpg" width="127" height="112"  alt="Перфоратор BOSCH BFG 6000">
               </p>
+              <h3 class="card-title">Перфоратор BOSCH BFG 3000</h3>
             </a>
-            <p>
+            <p class="btn-block">
               <button class="button" type="button">Купить</button>
-              <button class="button"  type="button">В закладки</button>
+              <button class="button btn-mod" type="button">В закладки</button>
             </p>
-            <p>
-              <del>22500 Р.</del>
-              <a href="#">15500 Р.</a>
-            </p>
+
+              <span class="del-price">22500 Р.</span>
+              <span class="price">12500 Р.</span>
+
           </li>
-          <li>
-            <a href="#">
-              <h3>Перфоратор BOSCH BFG 6000</h3>
+          <li class="card-item">
+            <a class="card-link" href="#">
               <p>
-                <img src="img/bosch.jpg" width="144" height="128"  alt="Перфоратор BOSCH BFG 6000">
+                <img class="catalog-item-image" src="img/bosch.jpg" width="127" height="112"  alt="Перфоратор BOSCH BFG 6000">
               </p>
+              <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
             </a>
-            <p>
+            <p class="btn-block">
               <button class="button" type="button">Купить</button>
-              <button class="button" type="button">В закладки</button>
+              <button class="button btn-mod" type="button">В закладки</button>
             </p>
-            <p>
-              <del>30500 Р.</del>
-              <a href="#">25500 Р.</a>
-            </p>
+
+              <span class="del-price">30500 Р.</span>
+              <span class="price">25500 Р</span>.
+
           </li>
-          <li>
-            <a href="">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+          <li class="card-item">
+            <a class="card-link" href="#">
               <p>
-                <img src="img/bosch2.jpg" width="127" height="112"  alt="Перфоратор BOSCH BFG 2000">
+                <img class="catalog-item-image" src="img/bosch2.jpg" width="127" height="112"  alt="Перфоратор BOSCH BFG 6000">
               </p>
+              <h3 class="card-title">Перфоратор BOSCH BFG 2000</h3>
             </a>
-            <p>
+            <p class="btn-block">
               <button class="button" type="button">Купить</button>
-              <button class="button" type="button">В закладки</button>
+              <button class="button btn-mod" type="button">В закладки</button>
             </p>
-            <p>
-              <a href="#">12500 Р.</a>
-            </p>
+
+              <span class="del-price">22500 Р.</span>
+              <span class="price">12500 Р.</span>
+
           </li>
         </div>
       </ul>
@@ -200,42 +216,42 @@
       </div>
       <ul class="manufacturers-list container">
         <li class="manufacturers-item">
-          <a href="#">
+          <a class="manufacturers-link" href="#">
             <img class="manufacturers-image" src="img/brand/bosch.jpg" width="126" height="37" alt="BOSCH">
           </a>
         </li>
         <li class="manufacturers-item">
-          <a href="#">
+          <a class="manufacturers-link"  href="#">
             <img class="manufacturers-image" src="img/brand/Makita.jpg" width="123" height="40" alt="Makita">
           </a>
         </li>
         <li class="manufacturers-item">
-          <a href="#">
+          <a class="manufacturers-link" href="#">
             <img class="manufacturers-image" src="img/brand/DeWALT.jpg" width="146" height="44" alt="DeWalt">
           </a>
         </li>
         <li class="manufacturers-item">
-          <a href="#">
+          <a class="manufacturers-link" href="#">
             <img class="manufacturers-image" src="img/brand/Интерскол.jpg" width="200" height="88" alt="Интерскол">
           </a>
         </li>
         <li class="manufacturers-item">
-          <a href="#">
+          <a class="manufacturers-link" href="#">
             <img class="manufacturers-image" src="img/brand/Hitachi.jpg" width="169" height="31" alt="HITACHI">
           </a>
         </li>
         <li class="manufacturers-item">
-          <a href="#">
+          <a class="manufacturers-link" href="#">
             <img class="manufacturers-image" src="img/brand/LG.jpg" width="121" height="73" alt="LG">
           </a>
         </li>
         <li class="manufacturers-item">
-          <a href="#">
+          <a class="manufacturers-link" href="#">
             <img class="manufacturers-image" src="img/brand/AEG.jpg" width="151" height="96" alt="AEG">
           </a>
         </li>
         <li class="manufacturers-item">
-          <a href="#">
+          <a class="manufacturers-link" href="#">
             <img class="manufacturers-image" src="img/brand/metabo.jpg" width="204" height="67" alt="metabo">
           </a>
         </li>
@@ -321,7 +337,7 @@
     <div class="footer-up">
         <section class="container footer-top">
           <a href="">
-            <img class="main-logo" src="img/logo.svg" width="220" height="68" alt="Логотип">
+            <img class="footer-logo" src="img/svg/footer-logo.svg" width="220" height="68" alt="Логотип">
           </a>
           <ul class="footer-nav">
             <li class="footer-nav-item">
@@ -342,9 +358,9 @@
           </ul>
         </section>
         <section class="container footer-middle">
-          <div>
+          <div class="footer-contacts">
             <address> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </div>
           <ul class="offers">
             <li class="offers-item">
