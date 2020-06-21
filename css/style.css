@@ -85,7 +85,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .main-logo-link {
@@ -129,20 +128,14 @@ input[type="search"] {
   opacity: 0.3;
 }
 
-
-
-
-
 input[type="search"]::placeholder {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   padding-left: 42px;
-
 }
 
 input[type="search"]:focus::placeholder {
-
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -153,8 +146,6 @@ input[type="search"]:focus::placeholder {
 input[type="search"]:focus {
   position: relative;
   background-color: var(--basic-white);
-
-
 }
 
 input[type="search"]:focus::before {
@@ -238,7 +229,6 @@ input[type="search"]:focus::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 30px;
 }
 
@@ -467,8 +457,6 @@ address {
 }
 
 .main-navigation {
-
-
   background-color: var(--basic-grey);
 }
 
@@ -1920,8 +1908,6 @@ position: relative;
   resize: none;
 }
 
-
-
 .btn-modal {
   width: 460px;
   height: 38px;
@@ -2015,10 +2001,6 @@ position: relative;
 .modal-show {
   display: block;
 }
-
- /* .modal {
-  display: none;
-} */
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
