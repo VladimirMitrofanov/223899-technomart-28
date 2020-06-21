@@ -17,6 +17,7 @@
           </a>
           <form class="search" action="https://echo.htmlacademy.ru/" method="POST">
             <input type="search" name="search" placeholder="Поиск:">
+            <span class="icon-search"></span>
           </form>
           <a class="bookmarks-link" href="#">Закладки: 0</a>
           <a class="cart-link" href="#">Корзина: 0</a>
@@ -108,12 +109,12 @@
             <div class="btn-right"></div>
             <div class="radios">
                 <label class="label-slider-radio">
-                <input class="slider-radio"  name="options" type="radio">
+                <input class="visually-hidden slider-radio"  name="options" type="radio">
                 <span class="slider-radio-mod"></span>
                 </label>
 
                 <label class="label-slider-radio">
-                <input class="slider-radio"  name="options" type="radio" checked>
+                <input class="visually-hidden slider-radio"  name="options" type="radio" checked>
                 <span class="slider-radio-mod"></span>
                 </label>
 
@@ -267,8 +268,8 @@
       <div class="services-slider container">
         <div class="delivery-slider">
           <ul class="service-list">
-            <li class="service-item">
-              Доставка
+            <li class="service-item service-item-current">
+            Доставка
             </li>
             <li class="service-item">
               Гарантия
@@ -279,14 +280,14 @@
           </ul>
           <div class="service-slider-desc">
             <h3 class="service-slider-heading">Доставка</h3>
-            <p class="service-slider-desc">
+            <p class="service-slider-text">
               Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!
             </p>
           </div>
-          <img src="img/dostavka.png" width="468" height="261" alt="Доставка">
+          <img class="service-image" src="img/dostavka.png" width="468" height="261" alt="Доставка">
         </div>
         <div class="garant-slider visually-hidden">
           <h3>Гарантия</h3>
@@ -310,13 +311,13 @@
           <p class="about-desc">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p class="delivery">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями: </p>
           <ul class="delivery-list">
-            <li>
+            <li class="delivery-item">
               Деловые линии
             </li>
-            <li>
+            <li class="delivery-item">
               Автотрейдинг
             </li>
-            <li>
+            <li class="delivery-item">
               ЖелДорЭкспедиция
             </li>
           </ul>
@@ -325,7 +326,7 @@
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-desc">Вы можете забрать товар сами,<br> завехав в наш офис:</p>
-        <button type="button">
+        <button class="open-map" type="button">
           <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 10/8">
         </button>
         <button class="btn  contac-btn" type="button">Заблудились? Напишите нам!</button>
@@ -418,29 +419,35 @@
       </div>
     </div>
   </footer>
-  <section class="modal map">
+
+  <section class="modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.386310739751!2d30.318068820068355!3d59.93723364539832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1590157102450!5m2!1sru!2sru" width="943" height="449" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <button class="map-btn" type="button"></button>
   </section>
-  <section class="modal">
+  <section class="feedback-popup">
     <h2 class="visually-hidden">Обратная связь</h2>
-    <form class="writeus" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="name-name">Ваше имя:</label>
-        <input id="name-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="email-email">Ваш e-mail:</label>
-        <input id="email-email" type="email" name="password" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
-      </p>
-      <button class="btn btn-modal" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="user-input-section">
+        <p>
+          <label for="name-name">Ваше имя:</label>
+          <input id="name-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email-email">Ваш e-mail:</label>
+          <input id="email-email" type="email" name="password" placeholder="email@example.com">
+        </p>
+        <p class="textarea-section">
+          <label for="comment-field">Текст письма:</label>
+          <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
+        </p>
+      </div>
+      <div class="send-button-area">
+        <button class="btn btn-modal" type="submit">Отправить</button>
+      </div>
     </form>
-    <button type="button">X</button>
+    <button class="feedback-close" type="button"></button>
   </section>
+  <script src="js/main.js"></script>
 </body>
 </html>
