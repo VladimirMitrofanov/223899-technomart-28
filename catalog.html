@@ -13,10 +13,12 @@
     <section class="main-header-top">
         <div class="container header-up">
           <a class="main-logo-link" href="index.html">
-            <img class="main-logo" src="img/logo.svg" width="220" height="47" alt="Логотип">
+            <img class="main-logo" src="img/svg/logo.svg" width="220" height="47" alt="Логотип">
           </a>
-          <form action="https://echo.htmlacademy.ru/" method="POST">
-            <input type="search" name="search" placeholder="Поиск:">
+          <form class="search" action="https://echo.htmlacademy.ru/" method="POST">
+            <input class="search-input" type="search" name="search" id="search" required>
+            <label class="search-label" for="search">Поиск:</label>
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           </form>
           <a class="bookmarks-link" href="#">Закладки: 0</a>
           <a class="cart-link cart-active" href="#">Корзина: 0</a>
@@ -31,7 +33,7 @@
       </p>
       <div class="contact-header">
         <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <address class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
       <div class="user-box">
         <ul class="user-card">
@@ -172,7 +174,7 @@
               <label for="set">Сетевые</label>
             </p>
           </fieldset>
-          <button  class="filter-button type="submit" value="Показать">Показать</button>
+          <button  class="filter-button" type="submit" value="Показать">Показать</button>
         </form>
       </section>
         <!-- Catalog -->
@@ -363,8 +365,8 @@
   <footer class="main-footer">
     <div class="footer-up">
         <section class="container footer-top">
-          <a href="">
-            <img class="footer-logo" src="img/svg/footer-logo.svg" width="220" height="68" alt="Логотип">
+          <a class="footer-logo-link" href="">
+            <img class="footer-logo" src="img/svg/logo.svg" width="220" height="68" alt="Логотип">
           </a>
           <ul class="footer-nav">
             <li class="footer-nav-item">
@@ -374,7 +376,7 @@
               <a class="footer-nav-link" href="#">Новости</a>
             </li>
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="catalog.html">Каталог</a>
+              <a class="footer-nav-link" href="#">Каталог</a>
             </li>
             <li class="footer-nav-item">
               <a class="footer-nav-link" href="#">Доставка</a>
@@ -386,7 +388,7 @@
         </section>
         <section class="container footer-middle">
           <div class="footer-contacts">
-            <address> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            <address class="contact-address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </div>
           <ul class="offers">
