@@ -280,23 +280,28 @@
       <div class="services-heading container">
         <h2 class="services-title">Сервисы</h2>
         <p class="services-desc">
-          Хороший интернет-магазин отличается от плохого не только ценами!<br/>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          Хороший интернет-магазин отличается от плохого не только ценами!<br />Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
       </div>
       <div class="services-slider container">
-        <div class="delivery-slider">
-          <ul class="service-list">
-            <li class="service-item service-item-current">
-            Доставка
-            </li>
-            <li class="service-item">
-              Гарантия
-            </li>
-            <li class="service-item">
-              Кредит
-            </li>
-          </ul>
-          <div class="service-slider-desc">
+        <input id="delivery" class="services-slider-input visually-hidden services-slider-delivery" type="radio" name="services" checked>
+        <input id="guarantee" class="services-slider-input visually-hidden services-slider-guarantee" type="radio" name="services">
+        <input id="credit" class="services-slider-input visually-hidden services-slider-credit" type="radio" name="services">
+        <ul class="service-list">
+          <li class="service-item">
+           <label class="services-label delivery-label" for="delivery">Доставка</label>
+          </li>
+          <li class="service-item">
+           <label class="services-label guarantee-label" for="guarantee">Гарантия</label>
+          </li>
+          <li class="service-item">
+            <label class="services-label credit-label" for="credit">Кредит</label>
+          </li>
+        </ul>
+        <div class="services-slider-screens">
+        <div class="services-slider-screen delivery-slider">
+
+
             <h3 class="service-slider-heading">Доставка</h3>
             <p class="service-slider-text">
               Мы с удовольствием доставим ваш товар прямо
@@ -304,22 +309,24 @@
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!
             </p>
+          
+
+        </div>
+        <div class="service-slider-desc">
+          <div class="services-slider-screen garant-slider">
+            <h3 class="service-slider-heading">Гарантия</h3>
+            <p class="service-slider-text">
+              Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+            </p>
           </div>
-          <img class="service-image" src="img/dostavka.png" width="468" height="261" alt="Доставка">
         </div>
-        <div class="garant-slider visually-hidden">
-          <h3>Гарантия</h3>
-          <p>
-            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-          </p>
-          <img src="img/garant.png" width="389" height="283" alt="Гарантия">
-        </div>
-        <div class="kredit visually-hidden">
-          <h3>Кредит</h3>
-          <p>
+        <div class="services-slider-screen credit-slider">
+          <h3 class="service-slider-heading">Кредит</h3>
+          <p class="service-slider-text">
             Кредит Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
           </p>
-          <img src="img/credit.png" width="465" height="285" alt="Кредит">
+
+        </div>
         </div>
       </div>
     </section>
