@@ -533,6 +533,7 @@ img {
   padding: 10px 5px;
   max-width: 191px;
   margin: 12px 0 0 24px;
+  vertical-align: baseline;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -783,6 +784,7 @@ img {
 .slider-radio-mod {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -1416,6 +1418,7 @@ img {
 
 .filter-checkbox {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
   margin-right: 10px;
   width: 23px;
@@ -1449,6 +1452,7 @@ img {
 .filter-input-radio {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   margin-right: 30px;
 
 }
