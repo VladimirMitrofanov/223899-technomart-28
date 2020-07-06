@@ -30,7 +30,7 @@
       <p class="desc">
         Интернет-магазин
         строительных материалов
-        и инструментов для ремонта
+        и&nbsp;инструментов для ремонта
       </p>
       <div class="contact-header">
         <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -96,12 +96,14 @@
         Перфораторы
       </li>
     </ul>
-    <h2 class="heading">ПЕРФОРАТОРЫ</h2>
+      <div class="heading-catalog">
+        <h2 class="heading-title">ПЕРФОРАТОРЫ</h2>
+      </div>
     <div class="catalog-row">
       <!--Filters  -->
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <span class="filters-title">Фильтр:</span>
+        <span class="filters-title filter-title-mod">Фильтр:</span>
         <form action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset class="filter-item">
             <legend>ЦЕНА:</legend>
@@ -110,8 +112,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <button class="toggle toggle-min" type="button"></button>
+                <button class="toggle toggle-max" type="button"></button>
               </div>
               <div class="price-controls">
                 <label class="min-price">

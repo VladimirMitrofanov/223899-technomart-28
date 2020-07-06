@@ -299,16 +299,12 @@ img {
   color: var(--basic-grey);
 }
 
-.user-name {
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-}
-
 .user-navigation {
   position: relative;
   display: flex;
   margin: 0;
+  padding-top: 3px;
+
   list-style: none;
   color: var(--basic-black);
 }
@@ -324,7 +320,7 @@ img {
 .user-autho::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 16px;
   left: 129px;
   width: 4px;
   height: 4px;
@@ -413,6 +409,7 @@ img {
 
 .user-card {
   position: relative;
+  margin: 0;
   padding: 0;
   width: 299px;
   list-style: none;
@@ -426,12 +423,14 @@ img {
 
 .user-name {
   display: block;
-  padding: 12px 27px 12px 45px;
+  padding: 14px 27px 12px 25px;
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
   background-color: var(--basic-white);
   color: var(--basic-black);
+
 }
 
 .user-name::after {
@@ -937,8 +936,62 @@ img {
   align-items: center;
 }
 
-.services  {
+.services {
   background-color: var(--basic-background);
+}
+
+.services-slider {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+
+.services-slider-screen {
+  display: none;
+}
+
+.services-label {
+  display: block;
+  padding-left: 27px;
+  padding-top: 14px;
+  cursor: pointer;
+  padding-bottom: 16px;
+}
+
+.services-slider-delivery:checked ~ .service-list .delivery-label {
+  background: #ffffff;
+  color: blue;
+}
+
+.services-slider-guarantee:checked ~ .service-list .guarantee-label {
+  background: #ffffff;
+  color: blue;
+}
+
+.services-slider-credit:checked ~ .service-list .credit-label {
+  background: #ffffff;
+  color: blue;
+}
+
+.services-slider-delivery:checked ~ .services-slider-screens .delivery-slider {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 305px;
+}
+
+.services-slider-guarantee:checked ~ .services-slider-screens .garant-slider {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 305px;
+}
+
+.services-slider-credit:checked ~ .services-slider-screens .credit-slider {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 305px;
 }
 
 .services-heading {
@@ -953,17 +1006,59 @@ img {
   text-transform: uppercase;
 }
 
+.delivery-slider {
+  position: relative;
+}
+
+.garant-slider {
+  position: relative;
+}
+
+.credit-slider  {
+  position: relative;
+}
+
+.delivery-slider::after {
+  content: '';
+  position: absolute;
+  width: 468px;
+  height: 260px;
+  top: 73px;
+  right: -304px;
+  background-image: url(../img/dostavka.png);
+}
+
+.credit-slider::after {
+  content: '';
+  position: absolute;
+  width: 468px;
+  height: 260px;
+  top: 73px;
+  right: -328px;
+  background-image: url(../img/credit.png);
+}
+
+.garant-slider::after {
+  content: '';
+  position: absolute;
+  width: 468px;
+  height: 260px;
+  top: 71px;
+  right: -390px;
+  background-image: url(../img/garant.png);
+}
 
 .services-desc {
   margin-top: 23px;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
+
 }
 
 .service-slider-text {
   margin-top: 3px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .service-list {
@@ -971,7 +1066,7 @@ img {
   min-width: 240px;
   padding: 0;
   padding-bottom: 6px;
-  margin-top: 55px;
+  margin-top: 49px;
   color: var(--basic-white);
   font-weight: bold;
   font-size: 21px;
@@ -980,8 +1075,6 @@ img {
 }
 
 .service-item {
-  padding-left: 27px;
-  padding-top: 14px;
   width: 240px;
   height: 61px;
 
@@ -1001,6 +1094,7 @@ img {
   width: 10px;
   height: 279px;
   background-image: url(../img/line.png);
+  background-repeat: no-repeat;
 
 }
 
@@ -1008,12 +1102,8 @@ img {
   margin-top: 75px;
 }
 
-.delivery-slider {
-  display: flex;
-  justify-content: space-around;
-}
-
 .service-slider-heading {
+  margin-top: 46px;
   font-weight: normal;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -1022,7 +1112,7 @@ img {
   color: var(--special-darcdarckblue);
 }
 
-.service-slider-desc  {
+.service-slider-desc {
   margin-left: 40px;
   z-index: 2;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1033,7 +1123,7 @@ img {
 
 .service-slider-text {
   width: 313px;
-  position: absolute;
+
   min-height: 99px;
 }
 
@@ -1044,12 +1134,12 @@ img {
 
 .about {
   width: 478px;
-  padding-top: 58px;
+  padding-top: 44px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
 }
 
-.about-title  {
+.about-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 30px;
@@ -1087,7 +1177,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 
 }
 
@@ -1106,7 +1196,7 @@ img {
 
 .contacts-title {
   text-transform: uppercase;
-  padding-top: 68px;
+  padding-top: 50px;
 }
 
 .contacts-desc {
@@ -1127,6 +1217,9 @@ img {
 .breadcrumbs-list {
   position: relative;
   display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1136,7 +1229,7 @@ img {
 
 .breadcrumbs-item {
   position: relative;
-  padding-left: 40px;
+  padding-left: 47px;
 }
 
 .breadcrumbs-list:before {
@@ -1155,7 +1248,7 @@ img {
   content: "";
   position: absolute;
   top: 2px;
-  left: 15px;
+  left: 29px;
   width: 78px;
   height: 75px;
   background-image: url("../img/svg/icon-right-small.svg");
@@ -1165,10 +1258,21 @@ img {
 
 /* Filters */
 
+.filter-title-mod {
+  display: block;
+  width: 220px;
+  height: 38px;
+  padding: 10px 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--basic-beige);
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
-  margin-top: 35px;
+  margin-top: 15px;
   border: none;
 
 
@@ -1301,7 +1405,7 @@ img {
 
 .filter-button {
   padding: 10px 78px;
-  margin-top: 37px;
+  margin-top: 6px;
   border: 1px solid #E5E5E5;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1370,16 +1474,24 @@ img {
   border: none;
   background-image: url(../img/svg/radio-on.svg);
   background-repeat: no-repeat;
-
 }
 
 .brand-title {
   display: block;
 }
 
-
-
 /* Catalog */
+
+.heading-catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 3px;
+  margin-bottom: 20px;
+  height: 89px;
+  background-color: var(--special-verylightgrey);
+}
 
 .catalog-row {
   display: flex;
@@ -1681,8 +1793,8 @@ img {
 .pagination-list  {
   display: flex;
   padding: 0;
-  margin-top: 48px;
-  margin-bottom: 69px;
+  margin-top: 24px;
+  margin-bottom: 33px;
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: normal;
@@ -1767,7 +1879,7 @@ img {
 .footer-middle {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
 }
 
 .footer-bottom {
@@ -1837,6 +1949,10 @@ img {
   margin: 0;
   align-items: center;
   list-style: none;
+}
+
+.footer-contacts  {
+  padding-top: 17px;
 }
 
 .offers-link {
