@@ -953,20 +953,23 @@ img {
   cursor: pointer;
   padding-bottom: 16px;
 }
+.services-label:hover {
+  background-color: var(--special-darckblue);
+}
 
 .services-slider-delivery:checked ~ .service-list .delivery-label {
   background: #ffffff;
-  color: blue;
+  color: var(--special-darcdarckblue);
 }
 
 .services-slider-guarantee:checked ~ .service-list .guarantee-label {
   background: #ffffff;
-  color: blue;
+  color: var(--special-darcdarckblue);
 }
 
 .services-slider-credit:checked ~ .service-list .credit-label {
   background: #ffffff;
-  color: blue;
+  color: var(--special-darcdarckblue);
 }
 
 .services-slider-delivery:checked ~ .services-slider-screens .delivery-slider {
