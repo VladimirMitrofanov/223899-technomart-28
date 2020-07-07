@@ -171,11 +171,8 @@ img {
   color: var(--basic-white);
 }
 
-
-
 .cart-link {
   display: block;
-
   width: 150px;
   padding: 9px;
   padding-left: 50px;
@@ -226,7 +223,6 @@ img {
 
 .order-link {
   display: block;
-
   width: 150px;
   padding: 9px 17px;
   color: var(--basic-white);
@@ -265,7 +261,6 @@ img {
   margin-left: 53px;
   width: 270px;
 }
-
 
 .tel {
   display: block;
@@ -430,7 +425,6 @@ img {
   text-align: center;
   background-color: var(--basic-white);
   color: var(--basic-black);
-
 }
 
 .user-name::after {
@@ -566,10 +560,12 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .row-1 {
   display: flex;
   justify-content: space-between;
 }
+
 .row-2 {
   display: flex;
   justify-content: space-between;
@@ -696,7 +692,6 @@ img {
 .slider-list {
   padding: 0;
   margin: 0;
-
   list-style: none;
 }
 
@@ -709,9 +704,11 @@ img {
 .slider-first-screen-radio:checked ~ .slider-list .slider-item-first{
   display: block;
 }
+
 .slider-second-screen-radio:checked ~ .slider-list .slider-item-second{
   display: block;
 }
+
 .btn-left,
 .btn-right {
   position: absolute;
@@ -891,8 +888,6 @@ img {
   margin-right: 15px;
 }
 
-
-
 .goods-list {
   display: flex;
   flex-wrap: wrap;
@@ -913,7 +908,6 @@ img {
 }
 
 .manufacturers-item {
-
   align-items: center;
   width: 220px;
   height: 145px;
@@ -1052,7 +1046,6 @@ img {
 
 .services-desc {
   margin-top: 23px;
-
 }
 
 .service-slider-text {
@@ -1079,7 +1072,6 @@ img {
 .service-item {
   width: 240px;
   height: 61px;
-
   background-color: var(--basic-grey);
 }
 
@@ -1097,7 +1089,6 @@ img {
   height: 279px;
   background-image: url(../img/line.png);
   background-repeat: no-repeat;
-
 }
 
 .service-image {
@@ -1125,7 +1116,6 @@ img {
 
 .service-slider-text {
   width: 313px;
-
   min-height: 99px;
 }
 
@@ -1168,11 +1158,9 @@ img {
   display: block;
   width: 25px;
   height: 2px;
-
   background-color: var(--basic-red);
   top: 10px;
   left: -39px;
-
 }
 
 .about-company {
@@ -1180,12 +1168,10 @@ img {
   justify-content: space-between;
   padding: 0;
   margin-bottom: 56px;
-
 }
 
 .about-btn  {
   display: block;
-
   width: 220px;
   height: 38px;
   padding: 11px 24px 9px 24px;
@@ -1193,7 +1179,6 @@ img {
 
 .contacts  {
   width: 300px;
-
 }
 
 .contacts-title {
@@ -1208,13 +1193,11 @@ img {
 }
 
 .contac-btn {
-
   width: 300px;
   height: 38px;
   margin-top: 15px;
   padding: 11px 24px 9px 24px;
 }
-
 
 .breadcrumbs-list {
   position: relative;
@@ -1276,8 +1259,6 @@ img {
   padding: 0;
   margin-top: 15px;
   border: none;
-
-
 }
 
 .range-filter {
@@ -1313,6 +1294,22 @@ img {
   width: 70%;
   height: 2px;
   background: #00ca74;
+}
+
+.toggle {
+  position: relative;
+  box-shadow: 0 5px 5px -5px #333;
+}
+
+.toggle::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  bottom: -3px;
+  left: -2px;
+  background-color: var(--basic-greylight);
+  border-radius: 2px;
 }
 
 .range-controls .toggle {
@@ -1351,7 +1348,6 @@ img {
 .price-controls input {
   width: 95px;
   padding: 10px;
-
   text-align: center;
   color: #283136;
   border: none;
@@ -1391,13 +1387,10 @@ img {
 }
 
 .filter-title {
-
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
 }
-
-
 
 .filter-option {
   font-size: 15px;
@@ -1423,7 +1416,6 @@ img {
   margin-right: 10px;
   width: 23px;
   height: 23px;
-
 }
 
 .filter-checkbox::before {
@@ -1434,7 +1426,6 @@ img {
   width: 23px;
   height: 23px;
   background-image: url(../img/svg/checkbox-off.svg);
-
 }
 
 .filter-checkbox:checked + .filter-checkbox::after {
@@ -1446,7 +1437,6 @@ img {
   height: 23px;
   border: none;
   background-image: url(../img/svg/checkbox-on.svg);
-
 }
 
 .filter-input-radio {
@@ -1454,14 +1444,13 @@ img {
   display: inline-block;
   vertical-align: baseline;
   margin-right: 30px;
-
 }
 
 .filter-input-radio::before {
   content: "";
   position: absolute;
   left: 0px;
-    top: -17px;
+  top: -17px;
   width: 25px;
   height: 25px;
   background-image: url(../img/svg/radio-off.svg);
@@ -1507,10 +1496,8 @@ img {
 
 .sorting {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 28px;
   width: 700px;
   height: 38px;
@@ -1523,7 +1510,6 @@ img {
 .soring-title {
   display: block;
   padding-left: 20px;
-
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1535,20 +1521,66 @@ img {
 
 .btn-sort {
   padding: 0;
+  color: var(--basic-black);
+}
+
+input[class="btn-sort"] {
+  color: var(--basic-black);
+  border-bottom: 1px dotted var(--basic-red);
+  opacity: 0.3;
+}
+
+input[class="btn-sort"]:hover {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+  opacity: 1;
+}
+
+input[class="btn-sort"]:active {
+  color: var(--basic-red);
+  border: none;
 }
 
 .btn-sort:nth-child(-n+3) {
   margin-left: 70px;
 }
 
-.btn-sort:nth-child(2),
-.btn-sort:nth-child(3) {
-  border-bottom: 1px dotted var(--basic-red);
+.btn-up {
+  position: relative;
+  margin-left: 43px;
+  border: none;
+  outline: none;
 }
 
-.btn-sort:nth-child(4) {
-  margin-left: 35px;
-  background-image: url(//img/svg/icon-up-dir.svg);
+.btn-up::before  {
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: -8px;
+  left: 0;
+  background-image: url(../img/svg/icon-up-dir.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.btn-down {
+  position: relative;
+  margin-left: 18px;
+  border: none;
+  outline: none;
+}
+
+.btn-down::before  {
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: -8px;
+  left: 0;
+  background-image: url(../img/svg/icon-down-dir.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .cards-wrap {
@@ -1641,7 +1673,6 @@ img {
 
 .catalog-item-image {
   display: block;
-
   margin-left: 30px;
   width: 144px;
   height: 128px;
@@ -1714,8 +1745,6 @@ img {
 .card-item:hover > .btn-block {
   display: block;
 }
-
-
 
 /* Button */
 
@@ -1968,12 +1997,13 @@ img {
 .footer-social {
   display: flex;
   padding: 0;
-  margin-left: 130px;
+  margin-left: 65px;
   list-style: none;
 }
 
 .footer-bottom  {
   display: flex;
+  margin-top: -5px;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -1985,7 +2015,7 @@ img {
 }
 
 .social-item {
-
+  margin-left: 3px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -2037,13 +2067,13 @@ img {
   background-color: var(--basic-red);
 }
 
-.feedback {
-  margin-left: 133px;
+/* .feedback {
+
 }
 
 .developed {
-  margin-left: 53px;
-}
+
+} */
 
 .copyright-link {
   display: block;
@@ -2064,7 +2094,6 @@ img {
   right: 0;
   bottom: 0;
   z-index: 3;
-
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
