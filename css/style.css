@@ -1472,9 +1472,10 @@ img {
   background-repeat: no-repeat;
 }
 
-.brand-title {
+/* .brand-title {
   display: block;
-}
+  float: right;
+} */
 
 /* Catalog */
 
