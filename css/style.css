@@ -1876,7 +1876,7 @@ input[class="btn-sort"]:active {
 
 .definition {
   padding-top: 64px;
-  padding-bottom: 57px;
+  padding-bottom: 68px;
   background-color: var(--basic-background);
 }
 
@@ -2232,6 +2232,15 @@ input[class="btn-sort"]:active {
 .modal-add-cart {
   position: absolute;
   display: none;
+  position: fixed;
+
+
+  top: 30%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
   border-top: 7px solid  var(--basic-red);
   width: 620px;
 }
