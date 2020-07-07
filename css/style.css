@@ -1830,7 +1830,7 @@ input[class="btn-sort"]:active {
   display: flex;
   padding: 0;
   margin-top: 24px;
-  margin-bottom: 33px;
+  margin-bottom: 58px;
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: normal;
@@ -1875,8 +1875,8 @@ input[class="btn-sort"]:active {
 }
 
 .definition {
-  padding-top: 64px;
-  padding-bottom: 68px;
+  padding-top: 40px;
+  padding-bottom: 56px;
   background-color: var(--basic-background);
 }
 
@@ -2233,8 +2233,6 @@ input[class="btn-sort"]:active {
   position: absolute;
   display: none;
   position: fixed;
-
-
   top: 30%;
   margin: 0 auto;
   left: 0;

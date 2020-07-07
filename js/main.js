@@ -4,10 +4,31 @@ var mapClose = document.querySelector(".map-btn");
 var feedbackLink = document.querySelector(".contac-btn");
 var feedbackPopup = document.querySelector(".feedback-popup");
 var feedbackClose = document.querySelector(".feedback-close");
-var cartLink = document.querySelector(".button");
+var cartLink = document.querySelectorAll(".button");
 var cartPopup = document.querySelector(".modal-add-cart");
 var cartClose = document.querySelector(".close-add-cart");
 
+
+cartLink.forEach(function (cartLink) {
+cartLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartPopup.classList.add("modal-show");
+});
+});
+
+cartClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (cartPopup.classList.contains("modal-show")) {
+      cartPopup.classList.remove("modal-show");
+    }
+  }
+});
 
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -43,25 +64,6 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (feedbackPopup.classList.contains("modal-show")) {
       feedbackPopup.classList.remove("modal-show");
-    }
-  }
-});
-
-cartLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.add("modal-show");
-});
-
-cartClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (cartPopup.classList.contains("modal-show")) {
-      cartPopup.classList.remove("modal-show");
     }
   }
 });
