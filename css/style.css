@@ -38,6 +38,7 @@
 }
 
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
@@ -209,6 +210,11 @@ img {
 .bookmarks-link:hover::before,
 .cart-link:hover::before {
   opacity: 1;
+}
+
+.bookmarks-link:active::before,
+.cart-link:active::before {
+ opacity: 0.3;
 }
 
 .cart-active {
@@ -877,15 +883,17 @@ img {
 .heading-btn {
   width: 192px;
   height: 38px;
-  padding: 11px 24px 9px 40px;
+  padding: 11px 37px 0px 40px;
   margin-right: 20px;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .prod-btn {
   width: 192px;
   height: 38px;
-  padding: 8px 24px 9px 24px;
-  margin-right: 15px;
+  padding: 12px 24px 9px 24px;
+  margin-right: 16px;
+  margin-bottom: 10px;
 }
 
 .goods-list {
@@ -1049,6 +1057,10 @@ img {
 
 .services-desc {
   margin-top: 23px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .service-slider-text {
@@ -1178,6 +1190,9 @@ img {
   width: 220px;
   height: 38px;
   padding: 11px 24px 9px 24px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .contacts  {
@@ -1419,6 +1434,10 @@ img {
   margin-right: 10px;
   width: 23px;
   height: 23px;
+}
+
+.filter-checkbox:disabled {
+  opacity: 0.4;
 }
 
 .filter-checkbox::before {
@@ -1783,9 +1802,11 @@ input[class="btn-sort"]:active {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-red);
   border: none;
+  cursor: pointer;
 }
 
 .btn:active {
@@ -1962,6 +1983,7 @@ input[class="btn-sort"]:active {
 .footer-nav-link:active,
 .offers-link:active  {
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .footer-nav-link {
@@ -2026,6 +2048,11 @@ input[class="btn-sort"]:active {
   background-color: var(--special-darckbluedarck);
 }
 
+.social-item:hover,
+.social-item:active {
+  background-color: var(--basic-red);
+}
+
 .social-link {
   position: relative;
 }
@@ -2083,8 +2110,13 @@ input[class="btn-sort"]:active {
   display: block;
 }
 
+.copyright-link:hover {
+  text-decoration: underline;
+}
+
 .copyright-link:active {
   color: var(--basic-red);
+  text-decoration: none;
 }
 
 .modal-map {
@@ -2246,14 +2278,14 @@ input[class="btn-sort"]:active {
 
 .main-add-cart {
   display: flex;
-  padding: 60px 99px;
+  padding: 43px 81px;
   background-color: var(--basic-white);
 }
 
 .icon-add-cart {
   position: relative;
   display: block;
-  margin-right: 40px;
+  margin-right: 29px;
   width: 66px;
   height: 66px;
   border-radius: 50%;
@@ -2283,13 +2315,13 @@ input[class="btn-sort"]:active {
   justify-content: center;
   align-items: center;
   height: 112px;
-  padding-left: 40px;
+  padding-left: 3px;
   background-color: var(--special-lightbeige);
 }
 
 .btn-add-cart {
   display: block;
-  padding-top: 15px;
+  padding-top: 11px;
   width: 192px;
   height: 38px;
   font-weight: normal;
@@ -2299,8 +2331,20 @@ input[class="btn-sort"]:active {
 
 }
 
+.button-add-cart {
+  display: block;
+  padding-top: 11px;
+  width: 192px;
+  height: 38px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align:  center;
+}
+
 .btn-add-cart:last-child {
   margin-left: 10px;
+  padding-top: 4px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -2310,7 +2354,7 @@ input[class="btn-sort"]:active {
   z-index: 2;
   position: absolute;
   top: 12px;
-  right: 10px;
+  right: 3px;
   width: 30px;
   height: 22px;
   border: none;
